@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Amazon Deals</title>
+  <title>More Links</title>
   <style>
     body {
       margin: 0;
       font-family: "Segoe UI", sans-serif;
       background: url("your-background.jpg") no-repeat center center fixed;
       background-size: cover;
-      color: #fff;
+      color: #333;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -19,32 +19,57 @@
     h1 {
       font-size: 24px;
       margin-bottom: 20px;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+      color: #fff;
     }
     .button {
-      display: block;
+      display: flex;              /* 改成 flex，能放文字和图片 */
+      align-items: center;        /* 图片文字垂直居中 */
+      gap: 10px;                  /* 图片和文字之间留点间隔 */
       width: 260px;
-      background: rgba(0,0,0,0.7);
-      color: #fff;
-      padding: 14px;
+      background: #fff;           /* 白底 */
+      color: #333;                /* 深色字体 */
+      border: 2px solid #ccc;     /* 灰色边框 */
+      padding: 12px;
       border-radius: 8px;
-      text-align: center;
+      text-align: left;
       text-decoration: none;
       font-weight: bold;
       margin-bottom: 15px;
-      transition: background 0.3s;
+      transition: all 0.3s;
+    }
+    .button img {
+      width: 28px;    /* 图片大小可调 */
+      height: 28px;
+      object-fit: contain;
     }
     .button:hover {
-      background: rgba(0,0,0,0.9);
+      border-color: #666;
+      background: #f5f5f5;
     }
   </style>
 </head>
 <body>
-  <h1>More Links</h1>
+  <h1>Amazon Deals</h1>
 
-  <a href="https://amzn.to/4mwWbQ8" class="button" target="_blank">CM65Z 15%OFF</a>
-  <a href="https://www.youtube.com/" class="button" target="_blank">YouTube</a>
-  <a href="https://www.instagram.com/" class="button" target="_blank">Instagram</a>
-  <a href="index.html" class="button">⬅ Back to Home</a>
+  <a href="https://amzn.to/42DOAbm" class="button" target="_blank">
+    <img src="product1.jpg" alt="Amazon Icon">
+    CM65Z 15%OFF
+  </a>
+
+  <a href="https://www.youtube.com/" class="button" target="_blank">
+    <img src="product2.jpg" alt="YouTube Icon">
+    YouTube
+  </a>
+
+  <a href="https://www.instagram.com/" class="button" target="_blank">
+    <img src="product3.jpg" alt="Instagram Icon">
+    Instagram
+  </a>
+
+  <a href="index.html" class="button">
+    <img src="back-icon.png" alt="Back Icon">
+    ⬅ Back to Home
+  </a>
 </body>
 </html>
